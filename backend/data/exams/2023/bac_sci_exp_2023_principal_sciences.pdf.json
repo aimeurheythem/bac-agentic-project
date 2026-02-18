@@ -1,0 +1,17 @@
+{
+  "year": 2023,
+  "stream_code": "SCI_EXP",
+  "session": "principal",
+  "subject_code": "SCIENCES",
+  "subject_name": "Natural Sciences",
+  "filename": "bac_sci_exp_2023_principal_sciences.pdf",
+  "url": "https://example.com/bac/sciences/2023/principal",
+  "download_date": "2026-02-17T19:01:17.889359",
+  "topics": [
+    "genetics",
+    "ecology",
+    "cell_biology"
+  ],
+  "has_correction": true,
+  "source": "sample"
+}

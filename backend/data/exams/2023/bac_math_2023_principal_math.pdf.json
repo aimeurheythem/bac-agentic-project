@@ -1,0 +1,18 @@
+{
+  "year": 2023,
+  "stream_code": "MATH",
+  "session": "principal",
+  "subject_code": "MATH",
+  "subject_name": "Mathematics",
+  "filename": "bac_math_2023_principal_math.pdf",
+  "url": "https://example.com/bac/math/2023/principal",
+  "download_date": "2026-02-17T19:01:17.889328",
+  "topics": [
+    "complex_numbers",
+    "limits",
+    "derivatives",
+    "integrals"
+  ],
+  "has_correction": true,
+  "source": "sample"
+}

@@ -1,0 +1,54 @@
+{
+  "filename": "bac_math_2023_principal_math.pdf",
+  "stream_code": "MATH",
+  "subject_code": "MATH",
+  "year": 2023,
+  "pages": [
+    {
+      "text": "Exercice 1:\nSoit z un nombre complexe...",
+      "latex": "z = x + iy, \\quad x, y \\in \\mathbb{R}",
+      "confidence": 0.95,
+      "page_number": 1,
+      "is_math": true,
+      "is_arabic": false,
+      "errors": []
+    },
+    {
+      "text": "Exercice 2:\nCalculer la limite...",
+      "latex": "\\lim_{x \\to 0} \\frac{\\sin(x)}{x} = 1",
+      "confidence": 0.92,
+      "page_number": 2,
+      "is_math": true,
+      "is_arabic": false,
+      "errors": []
+    },
+    {
+      "text": "Exercice 3:\nSoit f la fonction définie par...",
+      "latex": "f'(x) = \\frac{d}{dx}f(x)",
+      "confidence": 0.89,
+      "page_number": 3,
+      "is_math": true,
+      "is_arabic": false,
+      "errors": []
+    }
+  ],
+  "combined_text": "Exercice 1:\nSoit z un nombre complexe...\n\nExercice 2:\nCalculer la limite...\n\nExercice 3:\nSoit f la fonction définie par...",
+  "combined_latex": "z = x + iy, \\quad x, y \\in \\mathbb{R}\n\n\\lim_{x \\to 0} \\frac{\\sin(x)}{x} = 1\n\nf'(x) = \\frac{d}{dx}f(x)",
+  "extracted_problems": [
+    {
+      "number": "1",
+      "text": "Soit z un nombre complexe...",
+      "language": "french"
+    },
+    {
+      "number": "2",
+      "text": "Calculer la limite...",
+      "language": "french"
+    },
+    {
+      "number": "3",
+      "text": "Soit f la fonction définie par...",
+      "language": "french"
+    }
+  ]
+}

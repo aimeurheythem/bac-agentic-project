@@ -1,0 +1,67 @@
+:root {
+  font-family: 'Cairo', 'Noto Naskh Arabic', system-ui, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  direction: rtl;
+  text-align: right;
+
+  color-scheme: light;
+  color: #1e293b;
+  background-color: #f8fafc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #3b82f6;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #2563eb;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  direction: rtl;
+  text-align: right;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+h1 {
+  font-size: 2.4em;
+  line-height: 1.2;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: 'Cairo', 'Noto Naskh Arabic', sans-serif;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  direction: rtl;
+}
+button:hover {
+  border-color: #3b82f6;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input, textarea, select {
+  font-family: 'Cairo', 'Noto Naskh Arabic', sans-serif;
+  direction: rtl;
+  text-align: right;
+}
