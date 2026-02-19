@@ -3,6 +3,7 @@ Coefficient Engine API - Task 2.1
 Implements the Bac average calculator logic with proper validation and edge cases.
 """
 
+from contextlib import asynccontextmanager
 from typing import List, Optional
 
 from database import get_db
@@ -12,10 +13,24 @@ from models import Coefficient, Stream, Subject, User
 from pydantic import BaseModel, Field, validator
 from sqlalchemy.orm import Session
 
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Auto-initialize and seed the database on every startup."""
+    try:
+        from init_db import init_database, seed_data
+        init_database()
+        seed_data()
+    except Exception as e:
+        print(f"[startup] DB init warning: {e}")
+    yield
+
+
 app = FastAPI(
     title="Algerian Baccalaureat AI Backend",
     description="AI-powered tutoring system for Algerian Baccalaureat",
     version="0.1.0",
+    lifespan=lifespan,
 )
 
 app.add_middleware(
