@@ -4,24 +4,22 @@
 
 ---
 
-## 🟦 Slide 1 — Cover
-
-*[oqef shwiya, khelli les gens yshofou l'écran]*
+## 🟦 Slide 1 — Cover,
 
 ---
 
-**"Bonjour tout le monde —**
-lyom ghadi nchoufou plan Ta3 **Bac Agent** —
-AI platform mbniya khassatan l**students ta3 baccalauréat** fi l'Algérie.
+**"salam 3likom tout le monde —**
+lyom rah nchoufou plan Ta3 **Bac Agent** —
+AI platform mbniya l**students ta3 baccalauréat** fi l'Algérie.
 
-L'idea simple — kol student fi l'Algérie ykhdem fel bac, w maandouch ai tool yfahmou w y3awnouh haq
-machi tool 3adi, hada tool **yfahem filière diyalk, mwad diyalk, w coefficient diyak.**
+L'idea simple — kol student fi l'Algérie ykhdem fel bac, w maandouch ai tool yfahmou w y3awnou haq
+machi tool normal, hada tool **yfahem filière diyalk, mawad diyalk, w coefficient dyalek.**
 
-Hadchi li ghadi nchoufou lyoum : kifech rah nebno l platform, l architecture, l AI modes,
-w kifach l student ighadi yt3amal m3aha."
+wesh rah nchoufou lyoum : kifech rah nebno l platform, l architecture ta3ha,wel AI modes li rah nbnohom,
+w kifach l student rah yt3amal m3aha."
 
 ---
-
+1
 ## 🟦 Slide 2 — What is Bac Agent?
 
 ---
@@ -34,9 +32,9 @@ ma3rafch **coefficient dyal matière**, w ma3rafch kif yet3amal **barème** fi b
 
 **7 filières officielles** — mathématiques, sciences, technique, gestion...
 **5 AI modes** — kol mode 3andou but mkhtalef.
-**10 ans d'examens** — 2015 l 2024 — **real bac exams** — kolhom mprocessés w fi system.
+**10 ans ou plus d'examens** — 2012 l 2025 — **real bac exams** — kolhom mprocessés w fi system.
 
-**Bac Agent** machi juste chatbot — howa tutor y3ref dossier dyal l'étudiant."
+**Bac Agent** machi juste chatbot — howa tutor (ostad) y3ref dossier dyal l'étudiant."
 
 ---
 
@@ -47,10 +45,12 @@ ma3rafch **coefficient dyal matière**, w ma3rafch kif yet3amal **barème** fi b
 **"Hna l challenge l awal —**
 fi l'Algérie makaynach filière wahda — kayen **7 filières**, w kollwahed 3andou **mwad** w **coefficients** mkhtalfin.
 
-Mathématiques — coefficient dyal math **7** — hia la matière l kbira.
+par exemple filière Mathématiques — coefficient ta3 math **7** — hia la matière l kbira.
+
 Sciences Expérimentales — sciences natur **6** — physics **5**.
 Technique Mathématique — **la plus complexe** — 4 options : Civil, Mécanique, Électrique, Procédés —
-kol option 3andha **curriculum** khass biha w **coefficient table** mkhtalfa.
+
+kol option 3andha **minhaj** khass biha w **coefficient table** mkhtalfa.
 
 **L challenge** ki dorna : l AI lazem y3ref wach hiya filière dyal l'étudiant, w specialty ta3o,
 w ybeddel **system prompt** lel automatique — machi manuellement."
@@ -61,24 +61,24 @@ w ybeddel **system prompt** lel automatique — machi manuellement."
 
 ---
 
-**"darwek nchoufou kif mbniya l system.**
+**"darwek nchoufou kifh nbno l system.**
 
-*[chir l'écran]*
 
-Fel foq — **Student** — ykhdem m3a **React frontend**.
-Yeb3ath request l **FastAPI backend** — Python 3.11.
+Fel foq — **Student** — yinteragier m3a L'UI ta3na.
+Yeb3ath request l **backend** ta3na li mebni bel FastAPI.
 Mel backend, kayen 3 services li khdmou m3a ba3dhom :
 
-**Premier** — **Tutor Agent** — hada howa l cerveau dyal system — howa li ychawer m3a GPT-4o.
-**Deuxième** — **RAG Pipeline** — hada li yjib l context mel examens réels dyal bac.
-**Troisième** — **OCR Engine** — hada li convertit les PDFs dyal examens l texte w LaTeX.
+**Premier** — **Tutor Agent** — hada howa l cerveau ta3 system — howa li yahder m3a LLM ta3na.
+
+**Deuxième** — **RAG Pipeline** — hada li yjib l context mel examens ta3 bac.
+
+**Troisième** — **OCR Engine** — hada li convertit les PDFs ta3 l'examens l texte.
 
 Fel base — **SQLite database** — fiha les streams, les matières, w les coefficients.
-**Vector Store** — fiha les chunks dyal examens — mprocessés w mconvertis l embeddings.
-**PDF Exams** — 2015 l 2024 — kolhom mstockés w mprocessés.
+**Vector Store** — fiha les chunks ta3 les examens — mprocessés w mconvertis l embeddings.
+**PDF Exams** — 2012 l 2024 — kolhom mstockés w mprocessés.
 
-**Kollchi yet3amel me3a** — l student yeb3ath question, l system yjib context mel examens,
-l tutor agent y3awed yjeml w yji b jawab précis."
+**Donc** — student yeb3ath question, system yjib context mel examens, tutor agent yjemel kolchi w yjib response précis."
 
 ---
 
@@ -86,16 +86,14 @@ l tutor agent y3awed yjeml w yji b jawab précis."
 
 ---
 
-**"w drwek les outils li rah nakhdmna bihom :**
+**"les outils li rah nkhdmo bihom :**
 
 **Frontend** — React 18 + TypeScript — build bih Vite — **fast, responsive, RTL** pour l'arabe.
 **Backend** — FastAPI — Python — **async** — kol endpoint ykhdem b les requêtes en parallèle.
 **AI / LLM** — OpenAI GPT-4o — hada l model l akhir.
 **Embeddings** — OpenAI text-embedding-3-small — pour l **vector search** dyal RAG.
 **Database** — SQLite local — w fel production ghadi nstorni l PostgreSQL.
-**OCR** — 3 providers : Mathpix pour les formules, Google Vision, w Tesseract fallback.
-
-**Stack mkhtar b 3aqel** — kol piece fiha raison."
+**OCR** — 3 providers : Mathpix pour les formules, Google Vision, w Tesseract.
 
 ---
 
@@ -105,32 +103,22 @@ l tutor agent y3awed yjeml w yji b jawab précis."
 
 **"Hna l cœur dyal system — l Tutor Agent.**
 
-kamel les requests ta3 student ydirou mel **TutorAgent class** —
-w hada l agent y3awed yjma3 **system prompt dynamique** men 4 parties :
-context dyal filière, behavior dyal mode, w RAG context mel examens réels.
-
 **Les 5 modes :**
 
 **Orientation** — *general mode* —
-machi l agent ychrah concepts w ychall exercises —
-hado li ygdar y3awnek tkhetet **jadwal drassi**, twajahak b les matières prioritaires,
-w tfekker fel bac men zaqat view strategique.
+hada li ygdar y3awnek tkhetet **jadwal drassi**, ywajhak b les matières prioritaires, w y3tik des conseils.
 
 **Exercises** — *exercise_help* —
-machi agent yjeblak l jawabDirectement —
-ychawer m3ak comme un vrai prof — yas2alk awel, ybeyen l erreur, w yjib l réponse bass b3d ma t7awel.
+ychawer m3ak comme un vrai prof — yas2alk awel, ybeyen l erreur, w yjib l réponse b3d ma t7awel.
 
 **Concepts** — *concept_explanation* —
-structure fixe : Définition, Théorème, Intuition, Formule, Exemples, Misconceptions —
-comme un cours complet fel response wahda.
+Définition, Théorème, Intuition, Formule, Exemples, Misconceptions — comme un cours complet fel response wahda.
 
 **Exam Prep** — *exam_prep* —
-yrekzou 3la les examens réels dyal 2015 l 2024 —
-y3erfak les **patterns** li tet3awd, kifach tdber waqtek, w chwiya tactic.
+hna nrekzou 3la les examens dyal bac ywerilk par exemple les **patterns** li tet3awd, kifach tdber waqtek, w chwiya tactic.
 
 **Review** — *solution_review* —
-nta kteb l solution diyalk — l agent ychek kol khTwa khTwa
-w y3tik score selon le **barème officiel**."
+nta kteb l solution diyalk — l agent ydir chek l solution ta3ek khTwa khTwa w y3tik score selon le **barème officiel**."
 
 ---
 
@@ -141,21 +129,21 @@ w y3tik score selon le **barème officiel**."
 **"Wach howa RAG w 3lach important ?**
 
 **RAG = Retrieval-Augmented Generation** —
-behal ma t3tih l GPT context réel men les examens bac — zdad mel knowledge générale diyah.
+Ya3ni nmeddou l'GPT context réel men les examens ta3 l'bac — zyada 3la l'knowledge générale li 3andou déjà.
 
 **Kif khedmna bih :**
 
-**Awel** — n7ottou kolhom lessexamens PDFs — 2015 l 2024 — fel **OCR engine**.
-**Tani** — n3emelou **chunking** — nqes3ou les textes l parties sahghira —
+**Awel** — n7ottou kamel les examens PDFs — 2015 l 2024 — fel **OCR engine**.
+**Tani** — ndiro **chunking** — nqasmo les textes l des parties sghar —
 kayen 4 strategies : lessons, exercises, solutions, w general.
-**Talt** — kol chunk n7awlouhou l **embedding** — vector — khdem bih OpenAI.
-**Rab3** — nstockiwou kolhom fel **vector store** — chunks.json + embeddings.npy.
-**Khames** — ki l student y9essek — n3emlu **cosine similarity search** —
-njibu top les chunks les plus proches.
+**Talt** — kol chunk n7awlouhou l **embedding** — vector — ykhdem bih OpenAI.
+**Rab3** — nstockiwhoum kamel fel **vector store** — chunks.json + embeddings.npy.
+**Khames** — ki l student ysa9si — ndiro **cosine similarity search** —
+njibou top les chunks les plus proches.
 **Sades** — n7ottou l context hadak fel **system prompt** — w l GPT yjaweb b des références réelles.
 
-**Exemple pratique** : student y9essek 3la l limite dyal une fonction —
-l system yjib chunks mel bac 2019 dyal math — w l agent yjeml w yjiblak jawab m3a référence réelle."
+**Exemple pratique** : student ysa9si 3la l limite ta3 une fonction —
+l system yjib chunks mel bac 2019 ta3 math — w l agent yejma3 kolchi w yjiblak jawab m3a référence réelle."
 
 ---
 
@@ -204,10 +192,6 @@ w kayen specialty_option pour tech math —
 kol combination 3andha coefficient specific.
 **users** — l'étudiant — email, filière, specialty.
 
-**Coefficient engine** — feature spéciale —
-l étudiant y9der ydakhel les notes diyah —
-l system y7eseb **moyenne pondérée** b les coefficients officiels —
-w y3tih la mention : Passable, Assez Bien, Bien, Très Bien."
 
 ---
 
@@ -237,23 +221,20 @@ w y3tih la mention : Passable, Assez Bien, Bien, Très Bien."
 **Phase 1 — Data & Foundation :**
 Ghadi nbniw l coefficient engine pour les 7 filières.
 Nseediw la base de données avec les streams, matières, w coefficients.
-Nbniw l OCR engine — convertit les PDFs d'examens l texte w LaTeX.
-Nprocessiw les exam files 2015 l 2023.
+Nbniw l OCR engine — convertit les PDFs d'examens l texte.
+Nprocessiw les exam.
 
 **Phase 2 — MVP AI + Frontend :**
 Nbniw le RAG pipeline complet — embeddings w retrieval.
 Nbniw le Tutor Agent m3a les 5 chat modes.
-Nbniw le React SPA — onboarding + chat flows.
-N9adiw inline chat w history sidebar.
+Nbniw le React SPA (single-page application) — onboarding + chat flows.
+najoutiw inline chat w history sidebar.
 
 **Phase 3 — Advanced Features :**
-N9adiw image input — l'étudiant y9der ysowwer exercise w yb3ath la photo.
+najoutiw image input — l'étudiant y9der ysowwer exercise w yb3ath la photo.
 Mode timed Mock Exam m3a auto-scoring.
-Voice support pour les matières شفوية.
+Voice support.
 Migration l Supabase pgvector pour la production.
-
-**Phase 1 w 2 — hadou mbenyin** — ghadi nchoufouhoum live.
-**Phase 3** — hado les fonctionnalités li ghadi n9adiwhoum."
 
 ---
 
